@@ -1,0 +1,39 @@
+img {
+    width:250px;
+    height:auto;
+}
+body{
+    background:url(../img/bg2.jpg);
+}
+
+*{
+    padding:0;padding:0;
+}
+.box{
+    position:relative;
+    float:left;
+    margin-right:20px;
+    /*background:red;*/
+}
+.content{
+    padding:10px;
+    border:1px solid #ccc;
+    box-shadow:0 0 5px #ccc;
+    border-radius: 5px;
+}
+.container .box:nth-child(5n){
+    margin-right:0;
+}
+.container{
+    margin:0 auto;
+    width:1460px;
+}
+.clearFix:after{
+    content:'';
+    width:0;
+    height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+
